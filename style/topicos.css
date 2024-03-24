@@ -1,0 +1,152 @@
+.topicos {
+    background-color: var(--cor-fundo-cabecalho);
+    padding: 1rem 0;
+}
+
+.topicos__topicos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--cor-fundo-secundaria);
+    padding: 2rem 2.5rem;
+}
+
+.topicos__titulo {
+    color: var(--cor-fundo-cabecalho);
+    font-weight: 300;
+    text-align: center;
+}
+
+.topicos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.topicos__item {
+    text-decoration: none;
+    background-color: var(--cor-fonte-titulo-menu);
+    text-align: center;
+    padding: 1rem 0.8rem;
+}
+
+.topicos__link {
+    color: var(--cor-fundo-cabecalho);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.topicos__contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.topicos__contato__textos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contato__titulo {
+    color: var(--cor-fonte-terciaria);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.contato__paragrafo {
+    color: var(--cor-fonte-terciaria);
+    font-weight: 300;
+}
+
+.contato__email {
+    border: 1px solid var(--cor-fonte-terciaria);
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    color: var(--cor-fonte-terciaria);
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-fonte-terciaria);
+    background: url('../assets/Email.svg') no-repeat;
+    padding-left: 2rem;
+}
+
+@media screen and (min-width:1024px) {
+    .topicos {
+        padding: 0;
+    }
+
+    .topicos__titulo {
+        font-size: 1.5rem;
+    }
+
+    .topicos__link {
+        font-size: 1.5rem;
+    }
+
+    .topicos__lista {
+        justify-content: space-around;
+        margin: 0 8rem;
+        gap: 0.5rem;
+    }
+
+    .topicos__item {
+        padding: 1.5rem 1.2rem;
+    }
+
+    .topicos__contato {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.875rem 9.375rem 3.187rem 9.375rem;
+    }
+
+    .contato__titulo {
+        font-size: 1.5rem;
+        width: 75%;
+        line-height: 2rem;
+    }
+
+    .contato__paragrafo {
+        width: 75%;
+        line-height: 1.5rem;
+    }
+    
+    .contato__email {
+        width: 40%;
+        height: auto;
+        padding-left: 2rem;
+    }
+}
+
+@media screen and (min-width:1728px) {
+
+    .topicos__topicos {
+        padding: 5rem 20rem;
+    }
+
+    .topicos__contato {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.875rem 15rem 3.187rem 30rem;
+    }
+
+    .contato__email {
+        width: 25%;
+    }
+
+    .contato__titulo {
+        width: 85%;
+    }
+
+    .contato__paragrafo {
+        width: 85%;
+    }
+}
